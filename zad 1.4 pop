@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//pierwszy sposobik
+/*pierwszy sposobik
 int pier;
 int dru;
 int trze;
@@ -27,33 +27,37 @@ int main()
     }
 }    
 //drugi sposob
-int pier;
+int a;
 int dru;
 int trze;
 int main()
 {
     
     cout << "Podaj pierwszą liczbe: " <<  endl;
-    cin >> pier;
+    cin >> a;
     cout << "Podaj drugą liczbe: " <<  endl;
     cin >> dru;
     cout << "Podaj trzecią liczbe: " <<  endl;
     cin >> trze;
 
-    if(pier > dru > trze){
-        cout << pier << " jest najwiekszą liczbą" << endl;
+    if(a >= dru && a >= trze){
+        cout << a << " jest najwiekszą liczbą" << endl;
     }
-    else if (dru > pier > trze){
+    else if (dru >= a && dru >= trze){
         cout << dru << " jest najwiekszą liczbą" << endl;
     }
-    else if(trze > dru > pier){
+    else if(trze >= a && trze >= dru){
         cout << trze << " jest najwiekszą liczbą" << endl;
     }
+    else{
+        cout << "da" << endl;
+    }
 }   
-//trzeci sposob
+*///trzeci sposob
 int pier;
 int dru;
 int trze;
+
 int main()
 {
     
@@ -64,19 +68,17 @@ int main()
     cout << "Podaj trzecią liczbe: " <<  endl;
     cin >> trze;
 
-    if(pier > dru){ 
-    if(pier > trze){
+    if(pier > dru){
+        if(pier > trze){
         cout << pier << " jest najwiekszą liczbą" << endl;
-    }}
-    else if (dru > pier){  
+        }
+    }else if(dru > pier){
     if(dru > trze){
         cout << dru << " jest najwiekszą liczbą" << endl;
-    }}
-    else if(trze > dru){  
+        }
+    }else if(trze > dru){
     if(trze > pier){
-        cout << pier << " jest najwiekszą liczbą" << endl;
-    }}
-
-    
-    return 0;
+        cout << trze << " jest najwiekszą liczbą" << endl;
+        }
+    }
 }
