@@ -2,7 +2,8 @@
 
 using namespace std;
 
-/*pierwszy sposobik
+//wszystko jest zakomendowane, żeby sprawdzić działa każdego sposobu trzeba odkomentować część programu
+//pierwszy sposobik
 int pier;
 int dru;
 int trze;
@@ -26,7 +27,8 @@ int main()
         cout << trze << " jest najwiekszą liczbą" << endl;
     }
 }    
-//drugi sposob
+/*
+//DRUGI SPOSOB
 int a;
 int dru;
 int trze;
@@ -53,10 +55,10 @@ int main()
         cout << "da" << endl;
     }
 }   
-*///trzeci sposob
+//TRZECI SPOSOB
 int pier;
 int dru;
-int trze;
+int n3;
 
 int main()
 {
@@ -66,19 +68,22 @@ int main()
     cout << "Podaj drugą liczbe: " <<  endl;
     cin >> dru;
     cout << "Podaj trzecią liczbe: " <<  endl;
-    cin >> trze;
+    cin >> n3;
 
-    if(pier > dru){
-        if(pier > trze){
+    if(pier >= dru){
+        if(pier >= n3){
         cout << pier << " jest najwiekszą liczbą" << endl;
         }
-    }else if(dru > pier){
-    if(dru > trze){
+    }
+    if(dru >= pier){
+     if(dru >= n3){
         cout << dru << " jest najwiekszą liczbą" << endl;
-        }
-    }else if(trze > dru){
-    if(trze > pier){
-        cout << trze << " jest najwiekszą liczbą" << endl;
+     }
+    }
+    if(n3 >= pier){
+     if(n3 >= dru){
+        cout << n3 << " jest najwiekszą liczbą" << endl;
         }
     }
 }
+*/
